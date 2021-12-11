@@ -1,0 +1,11 @@
+body {
+    background: url(assets/css/assets/images/candycanes.jpg);
+    background-size: cover;       
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.cards {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
