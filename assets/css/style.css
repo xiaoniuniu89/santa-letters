@@ -2,6 +2,15 @@ html {
     height: 100%;
 }
 
+:root {
+    --main-bg-colour-dark: brown;
+    --main-bg-colour-light: rgb(243, 184, 184);
+    --secondary-bg-colour-dark: rgb(6, 83, 6);
+    --secondary-bg-colour-light: rgb(156, 245, 156);
+    --main-colour-dark: black;
+    --main-colour-light: beige;    
+  }
+
 * {
     margin: 0; 
     padding: 0;
