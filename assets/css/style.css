@@ -252,3 +252,53 @@ footer h4 {
     }
 
 }
+
+/* ######## START ########### */
+/* STYLES FOR THE LETTER PAGE */
+/* ######## START ########### */
+
+.letter-container {
+    padding-top: 3rem;
+}
+
+.letter-construct {
+    background-color: var(--main-bg-colour-light);
+}
+
+.top-picks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+.letter-part {
+    border: 1px solid var(--main-colour-dark);
+    margin: 0.3rem;
+    padding: 0.3rem;
+    
+}
+
+.desk {
+    background-image: url("/assets/img/desk_1.jpg");
+    background-size: cover;
+    height: 70vh;
+    margin: 1rem, 0rem, 3rem;
+}
+
+.paper {
+    width: 70%;
+    background-color: white;
+    margin-left: 40%;
+    margin-right: 15%;
+    transform: rotate(-7deg);
+    margin-top: 2rem;
+    padding: 2rem;
+    font-size: 150%;
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+/* ######### END ############ */
+/* STYLES FOR THE LETTER PAGE */
+/* ######### END ############ */
