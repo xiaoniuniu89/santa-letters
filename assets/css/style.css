@@ -591,3 +591,20 @@ footer h4 {
 /* ######### END ############ */
 /* STYLES FOR THE LETTER PAGE */
 /* ######### END ############ */
+.sing-along {
+    background-color: green;
+    background-image: url(/assets/img/greenbaubles.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+
+iframe {
+    margin: 1px;
+    padding: 1px;
+    border: 0;
+    width: 600px;
+    height: 400px;
+}
