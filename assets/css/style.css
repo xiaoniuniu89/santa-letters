@@ -2,6 +2,8 @@ html {
     height: 100%;
 }
 
+
+
 :root {
     --main-bg-colour-dark: brown;
     --main-bg-colour-light: rgb(243, 184, 184);
@@ -20,6 +22,7 @@ html {
 body {
     display: flex; flex-direction: column;
     min-height: 100%;
+    background-color: red;
 }
 
 a {
@@ -44,6 +47,7 @@ header {
     padding: 1em 0;
     position: relative;
     border-bottom: 1px solid #464645;
+    background-color: var(--secondary-bg-colour-dark);
 }
 
 .header-container {
@@ -59,6 +63,10 @@ header {
     padding: .2em;
 }
 
+.logo-title {
+    color: var(--main-colour-light);
+}
+
 
 header::after {
     content: '';
@@ -68,7 +76,7 @@ header::after {
 
 .site-nav {
     position: absolute;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .8);
     top: 0; right: 0;
     height: 0px;
     overflow: hidden;
@@ -89,7 +97,7 @@ header::after {
 }
 
 .site-nav a {
-    color: #EBEBD3;
+    color: var(--main-colour-light);
     text-decoration: none;
     display: block;
     padding: 2em 6em 2em 2em;
@@ -111,7 +119,7 @@ header::after {
 .hamburger::after {
     content: '';
     display: block;
-    background: #464645;
+    background: var(--main-colour-light);
     height: 3px;
     width: 1.75em;
     border-radius: 3px;
@@ -135,7 +143,7 @@ header::after {
 
 .menu-toggle--open .hamburger {
     transform: rotate(45deg);
-    background: #EBEBD3;
+    background: var(--main-colour-light);
 }
 
 .menu-toggle--open .hamburger::before {
@@ -144,7 +152,7 @@ header::after {
 
 .menu-toggle--open .hamburger::after {
     transform: translateY(-3px) rotate(-90deg);
-    background: #EBEBD3;
+    background: var(--main-colour-light);
 }
 
 .close-nav {
@@ -162,6 +170,7 @@ header::after {
 
 footer {
     margin-top: auto;
+    background-color: var(--secondary-bg-colour-dark);
 }
 
 .footer-container {
@@ -169,7 +178,6 @@ footer {
     padding: 1.1em 0 1.1em 3em;
     border-top: 1px solid black;
     display: flex;
-
 }
 
 .footer-nav {
@@ -177,7 +185,6 @@ footer {
 }
 
 footer .logo-text {
-    
     text-align: center;
 }
 .footer-nav a {
@@ -193,16 +200,72 @@ footer .logo-text {
 
 footer h4 {
     padding: .3em;
+    color: var(--main-colour-light);
 }
 
 /* ######## END ########### */
 /* STYLES FOR THE FOOTER */
 /* ######## END ########### */
 
+
+/* ######## START ########### */
+/* STYLES FOR THE LANDING ELEMENTS  */
+/* ######## START ########### */
+
+
+
+.cta {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-big {
+    display: none;
+}
+
+.countdown {
+    margin: 0 auto;
+    width: 95%;
+    padding: .5em;
+}
+
+.village {
+    width: 100%;
+    background-image: url('../img/village.png');
+    background-position: center;
+    height: 40em;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+#days, .cta-txt {
+  font-size: 2.8em;
+  color: #FFF;
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: 'Mountains of Christmas', cursive;
+  text-shadow: .8px .8px var(--main-colour-dark);
+}
+
+.cta-txt {
+    font-size: 1.6rem;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    top: 150px
+}
+
+
+
+
 /* ######## MEDIA QUERY ########### */
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 840px) {
     .header-container {
         width: 90%;
        
@@ -272,6 +335,32 @@ footer h4 {
         width: 40%;
         padding-right: 4em;
     }
+
+
+    .cta {
+        flex-direction: row-reverse;
+        /* margin-top: 5em; */
+        align-items: flex-start;
+    }
+
+   .cta-small {
+       display: none;
+   }
+
+    .cta-big {
+        display: block;
+    }
+
+    .cta-txt {
+        position: initial;
+    }
+
+
+   .countdown {
+       align-self: center;
+       padding: 2em;
+   }
+
 
 }
 
