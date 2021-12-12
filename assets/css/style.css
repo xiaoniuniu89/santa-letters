@@ -50,7 +50,7 @@ header {
     border-bottom: 1px solid #464645;
     background-color: var(--secondary-bg-colour-dark);
 }
-
+/* cards used for the images print out */
 .cards {
     padding-top: 15px;
     padding-bottom: 15px;
