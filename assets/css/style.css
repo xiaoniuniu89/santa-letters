@@ -594,7 +594,11 @@ footer h4 {
 .sing-along {
     background-color: green;
     background-image: url(/assets/img/greenbaubles.jpg);
+    background-position: center;
     background-size: cover;
+    position: relative;
+    text-align: center;
+    display: inline-block;
 }
 
 iframe {
