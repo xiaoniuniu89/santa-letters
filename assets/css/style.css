@@ -1,11 +1,593 @@
+
+html {
+    height: 100%;
+}
+
+
+
+:root {
+    --main-bg-colour-dark: brown;
+    --main-bg-colour-light: rgb(243, 184, 184);
+    --secondary-bg-colour-dark: rgb(6, 83, 6);
+    --secondary-bg-colour-light: rgb(156, 245, 156);
+    --main-colour-dark: black;
+    --main-colour-light: beige;    
+  }
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background: url(https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/images/candycanes.jpg);
-    background-size: cover;       
-    background-repeat: no-repeat;
-    background-position: center center;
+    display: flex; flex-direction: column;
+    min-height: 100%;
+    background-color: red;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* ######## START ########### */
+/* STYLES FOR THE NAVBAR */
+/* ######## START ########### */
+
+#navbar-big {
+    display: none;
+}
+
+header {
+    padding: 1em 0;
+    position: relative;
+    border-bottom: 1px solid #464645;
+    background-color: var(--secondary-bg-colour-dark);
 }
 
 .cards {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+.header-container {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    width: 50%;
+    align-self: center;
+    padding: .2em;
+}
+
+.logo-title {
+    color: var(--main-colour-light);
+}
+
+
+header::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.site-nav {
+    position: absolute;
+    background: rgba(0, 0, 0, .8);
+    top: 0; right: 0;
+    height: 0px;
+    overflow: hidden;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-nav li {
+    border-bottom: 1px solid #575766;
+}
+
+.first-nav {
+    margin-top: 5em;
+}
+
+.site-nav a {
+    color: var(--main-colour-light);
+    text-decoration: none;
+    display: block;
+    padding: 2em 6em 2em 2em;
+    text-transform: uppercase;
+}
+
+
+/* hamburger menu */
+
+.menu-toggle {
+    padding: 1em;
+    position: absolute;
+    right: 0.75em; top: 1.7em;
+    cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    display: block;
+    background: var(--main-colour-light);
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
+    transition: all ease-in-out .5s;
+}
+
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+.site-nav--open {
+    height: auto;
+    width: 70%;
+}
+
+.menu-toggle--open .hamburger {
+    transform: rotate(45deg);
+    background: var(--main-colour-light);
+}
+
+.menu-toggle--open .hamburger::before {
+    opacity: 0;
+}
+
+.menu-toggle--open .hamburger::after {
+    transform: translateY(-3px) rotate(-90deg);
+    background: var(--main-colour-light);
+}
+
+.close-nav {
+    display: none;
+}
+
+/* ######## END ########### */
+/* STYLES FOR THE NAV */
+/* ######## END ########### */
+
+/* countdown */
+
+body {
+    width: 100%;
+    font-family: 'Cookie', cursive;
+    overflow: hidden;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #F24236;
+    margin: 0;
+}
+
+#days {
+    font-size: 20px;
+    color: #FFF;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+/* End countdown */
+
+/* Snowflaks */
+
+.drop {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    opacity: 0;
+}
+
+.snow {
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    background-color: #FFF;
+    box-shadow: 0 0 10px #FFF
+}
+
+.animate {
+    animation: falling 6.5s infinite ease-in;
+}
+
+@keyframes falling {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: 1000px;
+        opacity: 0
+    }
+}
+
+/* End snoeflakes */
+
+/* Button */
+/*.button, .button:hover, .button:active {
+    box-shadow:
+        inset 1px 1px 0px rgba(255, 255, 255, 0.25),  /* highlight 
+        inset 0 0 6px #a23227,  /* inner glow 
+        inset 0 80px 80px -40px #ac3223,  /* gradient 
+        1px 1px 3px rgba(0, 0, 0, 0.75);  /* shadow  
+}
+
+
+.button {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-width: 10px;
+    padding: 22px 33px;
+    font-family: 'Lobster', cursive;
+    font-size: 26px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #FFF;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
+    background: #5e0d0c;
+    outline: none;
+    border-radius: 15px;
+    border: 1px solid #4c0300;
+   
+    position: relative;
+    overflow: visible;  /* IE9 & 10 
+    -webkit-transition: 500ms linear;
+    -moz-transition: 500ms linear;
+    -o-transition: 500ms linear;
+    transition: 500ms linear;
+} 
+
+.button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: -3px;
+    right: 0;
+    height: 23px;
+    background: url(/assets/img/X-mass-btn1.png) no-repeat 0 0,
+        url(/assets/img/X-mass-btn2.png) no-repeat 50% 0,
+        url(/assets/img/X-mass-btn3.png) no-repeat 100% 0;
+}
+
+.button:hover {
+    background: #a61715;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75), 0 0 40px #FFF;
+    
+}
+
+.button:focus {
+    outline: none;  /*FF
+}
+
+.button:active { 
+
+    -webkit-transition: 50ms linear;
+    -moz-transition: 50ms linear;
+    -o-transition: 50ms linear;
+    transition: 50ms linear;
+}
+
+
+/* other styles 
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    display: table;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNkMzU0NDgiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNGExMTBjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-radial-gradient(center, ellipse cover, #d35448 0%, #4a110c 100%);  /* FF3.6+ 
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #d35448), color-stop(100%, #4a110c)); /* Chrome,Safari4+ 
+    background: -webkit-radial-gradient(center, ellipse cover, #d35448 0%, #4a110c 100%);  /* Chrome10+,Safari5.1+ 
+    background: -o-radial-gradient(center, ellipse cover, #d35448 0%, #4a110c 100%);  /* Opera 12+ 
+    background: -ms-radial-gradient(center, ellipse cover, #d35448 0%, #4a110c 100%);  /* IE10+ 
+    background: radial-gradient(ellipse at center, #d35448 0%, #4a110c 100%);  /* W3C 
+}
+
+.centerer {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    /* noise image 
+    background-image: url(/assets/img/X-mass-btn-bg.png);
+} */
+
+/* End button */
+
+/* ######## START ########### */
+/* STYLES FOR THE FOOTER  */
+/* ######## START ########### */
+
+footer {
+    margin-top: auto;
+    background-color: var(--secondary-bg-colour-dark);
+}
+
+.footer-container {
+    width: 100%;
+    padding: 1.1em 0 1.1em 3em;
+    border-top: 1px solid black;
+    display: flex;
+}
+
+.footer-nav {
+    width: 40%;
+}
+
+footer .logo-text {
+    text-align: center;
+}
+.footer-nav a {
+    color: blue;
+}
+
+.footer-nav li {
+    list-style: none;
+    display: inline-block;
+    padding: .3em;
+    font-size: .8rem;
+}
+
+footer h4 {
+    padding: .3em;
+    color: var(--main-colour-light);
+}
+
+/* ######## END ########### */
+/* STYLES FOR THE FOOTER */
+/* ######## END ########### */
+
+
+/* ######## START ########### */
+/* STYLES FOR THE LANDING ELEMENTS  */
+/* ######## START ########### */
+
+
+
+.cta {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-big {
+    display: none;
+}
+
+.countdown {
+    margin: 0 auto;
+    width: 95%;
+    padding: .5em;
+}
+
+.village {
+    width: 100%;
+    background-image: url('../img/village.png');
+    background-position: center;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+#days, .cta-txt {
+  font-size: 2.8em;
+  color: #FFF;
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: 'Mountains of Christmas', cursive;
+  text-shadow: .8px .8px var(--main-colour-dark);
+}
+
+.cta-txt {
+    font-size: 1.6rem;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    top: 150px
+}
+
+
+
+
+/* ######## MEDIA QUERY ########### */
+
+
+@media screen and (min-width: 840px) {
+    .header-container {
+        width: 90%;
+       
+        }
+
+    .logo-text {width: 20%;}
+
+    .menu-toggle, .site-nav {display: none;}
+
+    #navbar-big {
+        display: flex;
+        width: 40%;
+        margin-top: .8em;
+    }
+
+    .nav-items {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 1em;
+        align-items: center;
+        letter-spacing: .2em;
+        text-decoration: none;
+    }
+    
+    li.nav-item {
+
+        list-style-type: none;
+    }
+
+    .nav-item::after {
+        content: ' |';
+    }
+
+    .hover-underline
+    {
+        position: relative;
+    }
+    
+    .hover-underline::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -2px;
+      background-color: red;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .hover-underline:hover::before {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+  
+      .footer-nav li {
+        display: block;
+    }
+
+    .footer-nav {
+        width: 60%;
+        padding-left: 8em;
+    }
+
+    footer .logo-text {
+        width: 40%;
+        padding-right: 4em;
+    }
+
+
+    .cta {
+        flex-direction: row-reverse;
+        /* margin-top: 5em; */
+        align-items: flex-start;
+    }
+
+   .cta-small {
+       display: none;
+   }
+
+    .cta-big {
+        display: block;
+    }
+
+    .cta-txt {
+        position: initial;
+    }
+
+
+   .countdown {
+       align-self: center;
+       padding: 2em;
+   }
+
+
+}
+
+/* ######## END MEDIA QUERY ########### */
+
+
+/* ######## START ########### */
+/* STYLES FOR THE LETTER PAGE */
+/* ######## START ########### */
+
+.letter-container {
+    padding-top: 3rem;
+}
+
+.letter-construct {
+    background-color: var(--main-bg-colour-light);
+}
+
+.top-picks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+.letter-part {
+    border: 1px solid var(--main-colour-dark);
+    border-radius: 0.7rem;
+    margin: 0.2rem 0.3rem;
+    padding: 0.2rem 0.4rem;
+}
+
+.letter-button {
+    border: 1px solid var(--main-colour-dark);
+    border-radius: 0.7rem;
+    margin: 0.2rem 0.3rem;
+    padding: 0.2rem 0.4rem;
+}
+
+.letter-textarea {
+    
+}
+
+.desk {
+    background-image: url("/assets/img/desk_1.jpg");
+    background-size: cover;
+    height: 70vh;
+    margin: 1rem, 0rem, 3rem;
+}
+
+.paper {
+    width: 70%;
+    background-color: white;
+    margin-left: 40%;
+    margin-right: 15%;
+    transform: rotate(-7deg);
+    margin-top: 2rem;
+    padding: 2rem;
+    font-size: 150%;
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+/* ######### END ############ */
+/* STYLES FOR THE LETTER PAGE */
+/* ######### END ############ */

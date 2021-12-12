@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Sending letter to Santa" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <title>Christmas Hackathon Site - Letter to Santa</title>
+</head>
+
+<body style="background-image: url('/assets/img/photo-1576072446580-32468f1b5439.jpg'); background-repeat: no-repeat; background-size: cover;">
+    <header>
+        <div class="header-container">
+            <div class="logo-text">
+                <a href="index.html"><span class="logo-title">Christmas Site</span></a>
+            </div>
+            <div id="nav-small">
+                <nav class="site-nav">
+                    <ul>
+                        <li class="first-nav"><a href="index.html">Home</a></li>
+                        <li ><a href="letter.html">Letter</a></li>
+                        <li><a href="#">Sing along</a></li>
+                        <!-- <li><a href="#">print & color</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+            <nav id="navbar-big">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="index.html"><span class="hover-underline">Home</span></a></li>
+                    <li class="nav-item"><a href="letter.html"><span class="hover-underline">Letter</span></a></li>
+                    <li class="nav-item"><a href="#"><span class="hover-underline">sing along</span></a></li>
+                    <!-- <li class="nav-item"><a href="#"><span class="hover-underline">print & color</span></a></li> -->
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container letter-container">
+        <div class="row letter-construct p-3 mb-2">
+            <div class="col-sm-7">
+                <p>Click to use these phrases:</p>
+                <div class="top-picks">
+                    <div class="letter-part">Dear Santa,</div>
+                    <div class="letter-part">My name is</div>
+                    <div class="letter-part">I would like</div>
+                    <div class="letter-part">I wish</div>
+                    <div class="letter-part">I am</div>
+                    <div class="letter-part">years old</div>
+                    <div class="letter-part">I have been</div>
+                    <div class="letter-part">for Mom and Dad</div>
+                    <div class="letter-part">thank you very much</div>
+                    <div class="letter-part">brother</div>
+                    <div class="letter-part">sister</div>
+                    <div class="letter-part">Grandma</div>
+                    <div class="letter-part">Grandpa</div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p>Type your own text here:</p>
+                <form class="d-flex">
+                    <textarea class="letter-textarea" placeholder="Remember, be nice :)" cols="30" rows="3" id="custom_text"></textarea>
+                    <br>
+                    <button class="letter-button" id="add-text" type="submit">Add</button>
+                </form>
+                
+                
+            </div>
+            <div class="col-sm-2">
+                <p style="color: rgba(255, 255, 255, .01);">T</p>
+                <button class="letter-button" id="newP">New Paragraph</button>
+                <button class="letter-button" id="remove">Remove last</button>
+            </div>
+        </div>
+        <div class="row desk">
+            <div id='paper' class="col paper">
+                <p class="text">Dear Santa,</p>
+                <p class="text"></p>
+        </div>
+    </div>
+<!-- Print & Colour -->
+    <h3>Print & Colour</h3>
+    <div class="container-fluid" id="print">
+        <div class="text-center">
+            <h1 class="heading">Print the file & start colouring!</h1>
+        </div>
+        <div class="row text-center align-center">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card align-center">
+                    <img class="card-img-top" src="
+                    https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/images/gnomes.jpg.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Gnomes</h5>
+                        <a href="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/files/gnomes.pdf" class="card-link" target="_blank">Print</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card align-center">
+                    <img class="card-img-top" src="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/images/girl_elf.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Girl Elf</h5>
+                        <a href="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/files/girl_elf.pdf" class="card-link" target="_blank">Print</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card align-center">
+                    <img class="card-img-top" src="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/images/gingerbread.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Gingerbread</h5>
+                        <a href="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/files/gingerbread.pdf" class="card-link" target="_blank">Print</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center align-center">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card align-center">
+                    <img class="card-img-top" src="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/images/ho_ho_ho.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Ho! Ho! Ho!</h5>
+                        <a href="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/files/ho_ho_ho.pdf" class="card-link" target="_blank">Print</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card align-center">
+                    <img class="card-img-top" src="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/images/reindeer.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Reindeer</h5>
+                        <a href="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/files/reindeer.pdf" class="card-link" target="_blank">Print</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card align-center">
+                    <img class="card-img-top" src="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/images/tree.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Christmas Tree</h5>
+                        <a href="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/files/tree.pdf" class="card-link" target="_blank">Print</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center align-center">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card align-center">
+                    <img class="card-img-top" src="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/images/ornaments.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Ornaments</h5>
+                        <a href="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/files/ornaments.pdf" class="card-link" target="_blank">Print</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card align-center">
+                    <img class="card-img-top" src="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/images/my_deer.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">My Deer</h5>
+                        <a href="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/files/my_deer.pdf" class="card-link" target="_blank">Print</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card align-center">
+                    <img class="card-img-top" src="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/images/north_pole.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">North Pole</h5>
+                        <a href="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/files/north_pole.pdf" class="card-link" target="_blank">Print</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center align-center">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card align-center">
+                    <img class="card-img-top" src="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/images/balls.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Christmas Balls</h5>
+                        <a href="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/files/balls.pdf" class="card-link" target="_blank">Print</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card align-center">
+                    <img class="card-img-top" src="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/images/bake.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Christmas Bake</h5>
+                        <a href="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/files/bake.pdf" class="card-link" target="_blank">Print</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card align-center">
+                    <img class="card-img-top" src="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/images/holidays.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Holidays</h5>
+                        <a href="https://8000-rose-quelea-f1ohvyhk.ws-eu23.gitpod.io/assets/files/holidays.pdf" class="card-link" target="_blank">Print</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="footer-container">
+            <nav class="footer-nav">
+                <h4>Site Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="letter.html">Letter</a></li>
+                    <li><a href="#">sing along</a></li>
+                    <!-- <li><a href="#">print & color</a></li> -->
+                </ul>
+            </nav>
+            <div class="logo-text">
+                <a href=""><span class="logo-title logo-footer">Christmas Site</span></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="assets/js/letter.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
