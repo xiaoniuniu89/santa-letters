@@ -1,13 +1,13 @@
 // open and close burger icon
 
 $('.menu-toggle').on('click', function() {
-    $('nav').toggleClass('site-nav--open', 500)
+    $('nav').toggleClass('site-nav--open', 500);
     $(this).toggleClass('menu-toggle--open');
-})
+});
 
 
 // Countdown timer function
-const xmas = new Date("Dec 24, 2021 23:59:59").getTime()
+const xmas = new Date("Dec 24, 2021 23:59:59").getTime();
 
 var x = setInterval(function () {
 
@@ -69,7 +69,7 @@ function snow(num, speed) {
 				snow(num, speed);
 			}, speed);
 		}
-	};
+	}
 
 	function snowDrop(num, position) {
 		if (num > 0) {
@@ -80,11 +80,11 @@ function snow(num, speed) {
 			num--;
 			snowDrop(num, randomInt(0, innerWidth));
 		}
-	};
+	}
 
 function randomInt(min, max) {
 		return Math.floor(Math.random() * (max - min + 1) + min);
-	};
+	}
 
 
 /* // countdown timer 
