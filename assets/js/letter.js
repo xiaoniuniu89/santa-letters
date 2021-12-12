@@ -4,6 +4,8 @@ var letterParts = $('.letter-part');
 var paper = $('#paper')
 var custom_text = $('#custom_text')
 var addTextButton = $('#add-text')
+var removeButton = $('#remove')
+var addPButton = $('#newP')
 
 function addWord(newText) {
     lastP = $('#paper p:last-child')
@@ -13,21 +15,32 @@ function addWord(newText) {
 }
 
 function addText() {
+    lastP = $('#paper p:last-child');
+    text = lastP.text();
+    newText = custom_text.val();
+    addString = text.trim() + ' ' + newText.trim();
+    lastP.text(addString);
+    custom_text.val('');
+}
+
+function remove() {
     lastP = $('#paper p:last-child')
     text = lastP.text()
-    newText = custom_text.val()
-    console.log(text)
-    console.log(newText)
-    addString = text.trim() + ' ' + newText.trim()
-    console.log(addString)
-    lastP.text(addString)
-    custom_text.val('')
+    if (text.length) {
+        reducedText = text.slice(0,-1)
+        lastP.text(reducedText);
+    } else {
+        lastP.remove();
+    }
+}
 
+function addP() {
+    newP = `<p class="text"></p>`
+    paper.append(newP);
 }
 
 letterParts.click(function(e) {
     var clickedValue = $(e.target).text()
-    console.log(clickedValue)
     addWord(clickedValue)
 });
 
@@ -36,4 +49,6 @@ addTextButton.click(function(event) {
     addText();
 })
 
-// console.log(letterParts[0].innerText)
+removeButton.click(remove)
+addPButton.click(addP)
+
