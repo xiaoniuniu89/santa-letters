@@ -1,9 +1,6 @@
-
 html {
     height: 100%;
 }
-
-
 
 :root {
     --main-bg-colour-dark: brown;
@@ -50,11 +47,6 @@ header {
     border-bottom: 1px solid #464645;
     background-color: var(--secondary-bg-colour-dark);
 }
-/* cards used for the images print out */
-.cards {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
 
 .header-container {
     width: 95%;
@@ -72,7 +64,6 @@ header {
 .logo-title {
     color: var(--main-colour-light);
 }
-
 
 header::after {
     content: '';
@@ -109,7 +100,6 @@ header::after {
     padding: 2em 6em 2em 2em;
     text-transform: uppercase;
 }
-
 
 /* hamburger menu */
 
@@ -327,6 +317,8 @@ body {
 } */
 
 /* End button */
+
+
 
 /* ######## START ########### */
 /* STYLES FOR THE FOOTER  */
@@ -586,6 +578,16 @@ footer h4 {
     padding: 2rem;
     font-size: 150%;
     font-family: 'Mountains of Christmas', cursive;
+}
+
+/* print & colour */
+.cards {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.print {
+    padding-top: 3em
 }
 
 /* ######### END ############ */
