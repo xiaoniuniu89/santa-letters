@@ -51,4 +51,3 @@ addTextButton.click(function(event) {
 
 removeButton.click(remove)
 addPButton.click(addP)
-
