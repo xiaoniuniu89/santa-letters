@@ -1,3 +1,4 @@
+
 html {
     height: 100%;
 }
@@ -48,6 +49,11 @@ header {
     position: relative;
     border-bottom: 1px solid #464645;
     background-color: var(--secondary-bg-colour-dark);
+}
+
+.cards {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .header-container {
