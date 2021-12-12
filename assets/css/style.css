@@ -389,8 +389,19 @@ footer h4 {
 
 .letter-part {
     border: 1px solid var(--main-colour-dark);
-    margin: 0.3rem;
-    padding: 0.3rem;
+    border-radius: 0.7rem;
+    margin: 0.2rem 0.3rem;
+    padding: 0.2rem 0.4rem;
+}
+
+.letter-button {
+    border: 1px solid var(--main-colour-dark);
+    border-radius: 0.7rem;
+    margin: 0.2rem 0.3rem;
+    padding: 0.2rem 0.4rem;
+}
+
+.letter-textarea {
     
 }
 
