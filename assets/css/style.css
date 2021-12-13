@@ -420,7 +420,33 @@ footer h4 {
 }
 
 
+.sing-along {
+    background-color: green;
+    background-image: url(/assets/img/greenbaubles.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: inline-block;
+}
 
+iframe {
+    margin: 1px;
+    padding: 1px;
+    border: 0;
+    width: 90%;
+    max-width: 600px;
+    height: 400px;
+}
+
+
+.video-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    margin: 1em 0;
+}
 
 /* ######## MEDIA QUERY ########### */
 
@@ -499,7 +525,6 @@ footer h4 {
 
     .cta {
         flex-direction: row-reverse;
-        /* margin-top: 5em; */
         align-items: flex-start;
     }
 
@@ -521,6 +546,11 @@ footer h4 {
        padding: 2em;
    }
 
+    .video-wrapper {
+       display: inline-block;
+    }
+
+  
 
 }
 
@@ -618,20 +648,3 @@ footer h4 {
 /* ######### END ############ */
 /* STYLES FOR THE LETTER PAGE */
 /* ######### END ############ */
-.sing-along {
-    background-color: green;
-    background-image: url(/assets/img/greenbaubles.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    text-align: center;
-    display: inline-block;
-}
-
-iframe {
-    margin: 1px;
-    padding: 1px;
-    border: 0;
-    width: 600px;
-    height: 400px;
-}
