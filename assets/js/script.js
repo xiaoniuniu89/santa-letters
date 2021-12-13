@@ -11,12 +11,8 @@ $('.menu-toggle').on('click', function() {
 
 
 // Countdown timer function
-<<<<<<< HEAD
-const xmas = new Date("Dec 24, 2021 23:59:59").getTime();
-=======
 function Countdown(){
 const xmas = new Date("Dec 24, 2021 23:59:59").getTime()
->>>>>>> 6da30ed6b005ba6b0871920b7e2900e62828ede1
 
 
 
