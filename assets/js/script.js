@@ -11,6 +11,7 @@ $('.menu-toggle').on('click', function() {
 
 
 // Countdown timer function
+function Countdown(){
 const xmas = new Date("Dec 24, 2021 23:59:59").getTime()
 
 
@@ -28,10 +29,15 @@ var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+
 // Output the result in an element with id="days"
 document.getElementById("days").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds +"s until Christmas!"
 
+	 //Recursive call after 1 second using setTimeout
+    setTimeout(Countdown, 1000);
+}
 
+Countdown()
 
 //make snow
 snowDrop(200, randomInt(1035, innerWidth));
@@ -61,4 +67,5 @@ function snow(num, speed) {
 function randomInt(min, max) {
 		return Math.floor(Math.random() * (max - min + 1) + min);
 	};
+
 
