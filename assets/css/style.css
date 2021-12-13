@@ -3,12 +3,13 @@ html {
 }
 
 :root {
-    --main-bg-colour-dark: brown;
+    --main-bg-colour-dark: rgb(237,28,36);
     --main-bg-colour-light: rgb(243, 184, 184);
-    --secondary-bg-colour-dark: rgb(6, 83, 6);
-    --secondary-bg-colour-light: rgb(156, 245, 156);
+    --secondary-bg-colour-dark: #00A12A;
+    --secondary-bg-colour-light: #1CED54;
     --main-colour-dark: black;
     --main-colour-light: beige;    
+    --main-colour-red: #FF333A;    
   }
 
 * {
@@ -94,11 +95,14 @@ header::after {
 }
 
 .site-nav a {
-    color: var(--main-colour-light);
     text-decoration: none;
     display: block;
     padding: 2em 6em 2em 2em;
     text-transform: uppercase;
+}
+
+.nav-item a {
+    color: var(--main-colour-light);
 }
 
 /* hamburger menu */
