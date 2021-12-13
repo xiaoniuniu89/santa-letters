@@ -6,14 +6,10 @@ $('.menu-toggle').on('click', function() {
 });
 
 
-
-// countdown timer 
-
-
+// countdown timer and snow effect
 // Countdown timer function
 function Countdown(){
 const xmas = new Date("Dec 24, 2021 23:59:59").getTime()
-
 
 
 // Get today's date and time
@@ -52,7 +48,8 @@ function snow(num, speed) {
 			}, speed);
 		}
 	}
-
+    
+// Generate snow and place them in targered class
 	function snowDrop(num, position) {
 		if (num > 0) {
 			var drop = '<div class="drop snow" id="drop_' + num + '"></div>';
@@ -67,5 +64,3 @@ function snow(num, speed) {
 function randomInt(min, max) {
 		return Math.floor(Math.random() * (max - min + 1) + min);
 	}
-
-
