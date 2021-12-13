@@ -215,6 +215,10 @@ More detailed instructions can be found [here](https://docs.github.com/en/github
 
 # Credits <p id="credits"></p>
 
+- Source code for Countdown days and snow effect:
+[Snow efect](https://codepen.io/sashatran/pen/mOWLLB)
+[Countdown](https://www.w3schools.com/howto/howto_js_countdown.asp)
+
 ## Content
 
 ### Media
