@@ -21,8 +21,13 @@
 
 # About 
 
-  The site is deployed here:
-  - www.examplesite.com
+ The christmas site is an interactive webpage aimed at children. It aims to get them excited about Christmas day by providing a countdown timer, a chance to write a fun, interactive letter to Santa, and a place to listen to some classic Christmas themed youtube videos.
+ 
+ 
+ The site is deployed here:
+ 
+ - https://xiaoniuniu89.github.io/santa-letters/letter.html
+
 </section>
 
 
@@ -31,22 +36,44 @@
 # UX Design
 
 ## <p id="user-stories"> User Stories</p>
-- userstory
-- userstory
+- As a user I Want to navigate the web page easily, so I go directly to the page I'm most interested in.
+ 
+- As a user I Want to play Christmas music after completing my letter to Santa, further encapsulating the festive excitement of Christmas, and creating a fun and memorable moment.
+ 
+- As a user I Want to be able to download and print different festive coloring pages, further adding to the festive cheer and excitement.
+ 
+- As a user I Want to see a countdown to christmas timer, to get me excited about the run up to christmas day.
+ 
+- As a user I want to write an interactive letter to Santa so I can send it instantly over the internet.
+ 
+- As a parent of a young user I want a child friendly site free from coarse language so my child will not see anything inappropriate.
+ 
+- As the parent of a young child I want my child to have a letter full of prompts so they can finish the letter, uninhibited by their literacy level.
+ 
+- As a parent I want to use the site on mobile in case I am outside and need to calm my child down by watching the videos they like from the site or to view the timer again.
+
 
  ## <p id="typography">Typography</p> 
 
-- typography
+- [Mountains of Christmas](https://fonts.google.com/specimen/Mountains+of+Christmas?query=christmas+) is used throughout the site.
 
 ## <p id="color">Color</p> 
 
-- colors
+- rgb(237,28,36)
+- rgb(243, 184, 184)
+- #00A12A
+- #1CED54
+- black
+- beige
+- #FF333A
+
+
 
 </section>
 
 ## <p id="wireframes">Wireframes</p> 
 
-- wireframes
+Wireframes can be found [here](assets/documentation/christmas_wireframes.pdf)
 
 </section>
 
@@ -119,13 +146,13 @@ Testing can be found in this file: [Testing](TESTING.md)
 
 The site is deployed on git hub pages. The link is here:
 
-link
+https://xiaoniuniu89.github.io/santa-letters/
 
 Tsteps to deploy the site:
 - Go to [github.com](https://www.github.com)
 - Log in to account
 - Click repositories
-- Click -reponame
+- Click santa-letters
 - Click settings
 - scroll to the pages section at the bottom 
 - under source heading click select main
@@ -133,7 +160,7 @@ Tsteps to deploy the site:
 
 How to fork the repository
 - Go to [github.com](https://www.github.com) and login.
-- Click (repository-name)
+- Click santa-letters
 - in the top right of the page click the "fork" button
 - you will now have a copy of the repository in your github account.
 
@@ -141,7 +168,7 @@ How to clone the repository
 - Go to [github.com](https://www.github.com)
 - Log in to account
 - Click repositories
-- Click (reponame) fork
+- Click santa-letters fork
 - Click the green code button that says Clone or download 
 - to copy from HTTPS copy URL link "HTTPS". 
 - open terminal
@@ -162,20 +189,26 @@ More detailed instructions can be found [here](https://docs.github.com/en/github
 
 #### Images
 
-[christmas-tree](https://pixabay.com/vectors/christmas-tree-coloring-book-6002425/)
 
-[snowman](https://pixabay.com/vectors/snowman-christmas-coloring-book-6763905/)
 
-[rudolph](https://pixabay.com/vectors/deer-animal-fawn-baby-young-animal-6387533/)
 
-[bear](https://publicdomainvectors.org/en/free-clipart/Christmas-Bear-vector-graphics/17020.html)
+<br>
 
-[holly](https://pixabay.com/illustrations/leaves-flowers-christmas-floral-5726359/)
 
-[sleigh](https://pixabay.com/images/download/christmas-sleigh-6825463_1280.png?attachment&modal
-)
 
-[presents](https://publicdomainvectors.org/en/free-clipart/Coloring-book-gift/60724.html)
+#### Videos
+
+[Rudolph](https://www.youtube.com/embed/VjL031bE9FA)
+
+[Snowman](https://www.youtube.com/embed/TeQ_TTyLGMs)
+
+[Jingle Bells](https://www.youtube.com/embed/3CWJNqyub3o)
+
+[We Wish You A Merry Christmas](https://www.youtube.com/embed/g-OF7KGyDis)
+
+[Let It Go](https://www.youtube.com/embed/L0MK7qz13bU)
+
+[Santa Shark](https://www.youtube.com/embed/u0aAMvvw_co)
 
 
 <br>
