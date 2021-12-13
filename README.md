@@ -6,9 +6,11 @@
   - <a href="#color">Color</a>
   - <a href="#wireframes">Wireframes</a>
 - <a href="#features">Features</a>
-  - <a href="#">feature1</a>
-  - <a href="#">feature2</a>
-  - <a href="#">feature3</a>
+  - <a href="#countdown">Countdown</a>
+  - <a href="#snowdrop">Snowdrop</a>
+  - <a href="#letter">Letter</a>
+  - <a href="#coloring_pages">Coloring pages</a>
+  - <a href="#videos">Videos</a>
   - <a href="#features-left">Features Left to Impliment</a>
 - <a href="#tech">Technologies Used</a>
 - <a href="#test">Testing</a>
@@ -22,6 +24,9 @@
 # About 
 
  The christmas site is an interactive webpage aimed at children. It aims to get them excited about Christmas day by providing a countdown timer, a chance to write a fun, interactive letter to Santa, and a place to listen to some classic Christmas themed youtube videos.
+
+
+ <img src="assets/img/responsive.png">
  
  
  The site is deployed here:
@@ -81,17 +86,45 @@ Wireframes can be found [here](assets/documentation/christmas_wireframes.pdf)
 
 # Features
 
- ## <p id="#">feature1</p> 
+ ## <p id="countdown">Countdown Timer</p> 
 
-- feature1
+- The landing page features a countdown timer to christmas - below is a call to action to send your letter to santa and check out some videos.
 
-## <p id="#">feature2</p> 
+ <img src="assets/img/countdown_readme.png">
 
-- feature2
+
+## <p id="snowdrop">Backgroun Snow animation </p> 
+
+- The landing page features a css animation of falling snow
+
+ <img src="assets/img/snowdrop_readme.png">
+
+
+ ## <p id="letter">Letter to santa </p> 
+
+- The letter page features a fully interactive letter that will especially help younger users. User can input their own text or choose from some prompts.
+
+ <img src="assets/img/letter_readme.png">
+
+ ## <p id="coloring_pages">Coloring pages </p> 
+
+- The letter page also features several christmas coloring pages for users to download and enjoy.
+
+ <img src="assets/img/coloring_readme.png">
+
+
+## <p id="videos">Christmas videos </p> 
+
+- The Sing a long page features 6 christmas songs for users to enjoy. 
+
+ <img src="assets/img/video_readme.png">
+
+
 
 ## <p id="features-left">Features left to impliment</p> 
 
-- features
+- Email response from santa
+- Send childs wishlist to parents in an email 
 
 </section>
 
@@ -191,6 +224,12 @@ More detailed instructions can be found [here](https://docs.github.com/en/github
 
 [Landing Background](https://pixabay.com/vectors/christmas-holiday-red-xmas-5368717/)
 
+[printable pics](https://cenduparam.com/christmas-coloring-pages-pdf/)
+
+[baubles](https://unsplash.com/photos/x2lm26Rs2PM)
+
+[desk](https://unsplash.com/photos/7ACuHoezUYk)
+
 
 <br>
 
@@ -214,9 +253,5 @@ More detailed instructions can be found [here](https://docs.github.com/en/github
 <br>
 
 ### Text
-- written by
 
-
-## Aknowledgements
-
-- I'd like to thank....
+- text written by
