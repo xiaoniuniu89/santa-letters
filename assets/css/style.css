@@ -90,6 +90,10 @@ header::after {
     border-bottom: 1px solid #575766;
 }
 
+.site-nav li a {
+    color: var(--main-colour-light);
+}
+
 .first-nav {
     margin-top: 5em;
 }
