@@ -6,9 +6,11 @@
   - <a href="#color">Color</a>
   - <a href="#wireframes">Wireframes</a>
 - <a href="#features">Features</a>
-  - <a href="#">feature1</a>
-  - <a href="#">feature2</a>
-  - <a href="#">feature3</a>
+  - <a href="#countdown">Countdown</a>
+  - <a href="#snowdrop">Snowdrop</a>
+  - <a href="#letter">Letter</a>
+  - <a href="#coloring_pages">Coloring pages</a>
+  - <a href="#videos">Videos</a>
   - <a href="#features-left">Features Left to Impliment</a>
 - <a href="#tech">Technologies Used</a>
 - <a href="#test">Testing</a>
@@ -21,8 +23,16 @@
 
 # About 
 
-  The site is deployed here:
-  - www.examplesite.com
+ The christmas site is an interactive webpage aimed at children. It aims to get them excited about Christmas day by providing a countdown timer, a chance to write a fun, interactive letter to Santa, and a place to listen to some classic Christmas themed youtube videos.
+
+
+ <img src="assets/img/responsive.png">
+ 
+ 
+ The site is deployed here:
+ 
+ - https://xiaoniuniu89.github.io/santa-letters/letter.html
+
 </section>
 
 
@@ -31,22 +41,44 @@
 # UX Design
 
 ## <p id="user-stories"> User Stories</p>
-- userstory
-- userstory
+- As a user I Want to navigate the web page easily, so I go directly to the page I'm most interested in.
+ 
+- As a user I Want to play Christmas music after completing my letter to Santa, further encapsulating the festive excitement of Christmas, and creating a fun and memorable moment.
+ 
+- As a user I Want to be able to download and print different festive coloring pages, further adding to the festive cheer and excitement.
+ 
+- As a user I Want to see a countdown to christmas timer, to get me excited about the run up to christmas day.
+ 
+- As a user I want to write an interactive letter to Santa so I can send it instantly over the internet.
+ 
+- As a parent of a young user I want a child friendly site free from coarse language so my child will not see anything inappropriate.
+ 
+- As the parent of a young child I want my child to have a letter full of prompts so they can finish the letter, uninhibited by their literacy level.
+ 
+- As a parent I want to use the site on mobile in case I am outside and need to calm my child down by watching the videos they like from the site or to view the timer again.
+
 
  ## <p id="typography">Typography</p> 
 
-- typography
+- [Mountains of Christmas](https://fonts.google.com/specimen/Mountains+of+Christmas?query=christmas+) is used throughout the site.
 
 ## <p id="color">Color</p> 
 
-- colors
+- rgb(237,28,36)
+- rgb(243, 184, 184)
+- #00A12A
+- #1CED54
+- black
+- beige
+- #FF333A
+
+
 
 </section>
 
 ## <p id="wireframes">Wireframes</p> 
 
-- wireframes
+Wireframes can be found [here](assets/documentation/christmas_wireframes.pdf)
 
 </section>
 
@@ -54,17 +86,45 @@
 
 # Features
 
- ## <p id="#">feature1</p> 
+ ## <p id="countdown">Countdown Timer</p> 
 
-- feature1
+- The landing page features a countdown timer to christmas - below is a call to action to send your letter to santa and check out some videos.
 
-## <p id="#">feature2</p> 
+ <img src="assets/img/countdown_readme.png">
 
-- feature2
+
+## <p id="snowdrop">Backgroun Snow animation </p> 
+
+- The landing page features a css animation of falling snow
+
+ <img src="assets/img/snowdrop_readme.png">
+
+
+ ## <p id="letter">Letter to santa </p> 
+
+- The letter page features a fully interactive letter that will especially help younger users. User can input their own text or choose from some prompts.
+
+ <img src="assets/img/letter_readme.png">
+
+ ## <p id="coloring_pages">Coloring pages </p> 
+
+- The letter page also features several christmas coloring pages for users to download and enjoy.
+
+ <img src="assets/img/coloring_readme.png">
+
+
+## <p id="videos">Christmas videos </p> 
+
+- The Sing a long page features 6 christmas songs for users to enjoy. 
+
+ <img src="assets/img/video_readme.png">
+
+
 
 ## <p id="features-left">Features left to impliment</p> 
 
-- features
+- Email response from santa
+- Send childs wishlist to parents in an email 
 
 </section>
 
@@ -119,13 +179,13 @@ Testing can be found in this file: [Testing](TESTING.md)
 
 The site is deployed on git hub pages. The link is here:
 
-link
+https://xiaoniuniu89.github.io/santa-letters/
 
-Tsteps to deploy the site:
+Steps to deploy the site:
 - Go to [github.com](https://www.github.com)
 - Log in to account
 - Click repositories
-- Click -reponame
+- Click santa-letters
 - Click settings
 - scroll to the pages section at the bottom 
 - under source heading click select main
@@ -133,7 +193,7 @@ Tsteps to deploy the site:
 
 How to fork the repository
 - Go to [github.com](https://www.github.com) and login.
-- Click (repository-name)
+- Click santa-letters
 - in the top right of the page click the "fork" button
 - you will now have a copy of the repository in your github account.
 
@@ -141,7 +201,7 @@ How to clone the repository
 - Go to [github.com](https://www.github.com)
 - Log in to account
 - Click repositories
-- Click (reponame) fork
+- Click santa-letters fork
 - Click the green code button that says Clone or download 
 - to copy from HTTPS copy URL link "HTTPS". 
 - open terminal
@@ -162,28 +222,36 @@ More detailed instructions can be found [here](https://docs.github.com/en/github
 
 #### Images
 
-[christmas-tree](https://pixabay.com/vectors/christmas-tree-coloring-book-6002425/)
+[Landing Background](https://pixabay.com/vectors/christmas-holiday-red-xmas-5368717/)
 
-[snowman](https://pixabay.com/vectors/snowman-christmas-coloring-book-6763905/)
+[printable pics](https://cenduparam.com/christmas-coloring-pages-pdf/)
 
-[rudolph](https://pixabay.com/vectors/deer-animal-fawn-baby-young-animal-6387533/)
+[baubles](https://unsplash.com/photos/x2lm26Rs2PM)
 
-[bear](https://publicdomainvectors.org/en/free-clipart/Christmas-Bear-vector-graphics/17020.html)
+[desk](https://unsplash.com/photos/7ACuHoezUYk)
 
-[holly](https://pixabay.com/illustrations/leaves-flowers-christmas-floral-5726359/)
 
-[sleigh](https://pixabay.com/images/download/christmas-sleigh-6825463_1280.png?attachment&modal
-)
+<br>
 
-[presents](https://publicdomainvectors.org/en/free-clipart/Coloring-book-gift/60724.html)
+
+
+#### Videos
+
+[Rudolph](https://www.youtube.com/embed/VjL031bE9FA)
+
+[Snowman](https://www.youtube.com/embed/TeQ_TTyLGMs)
+
+[Jingle Bells](https://www.youtube.com/embed/3CWJNqyub3o)
+
+[We Wish You A Merry Christmas](https://www.youtube.com/embed/g-OF7KGyDis)
+
+[Let It Go](https://www.youtube.com/embed/L0MK7qz13bU)
+
+[Santa Shark](https://www.youtube.com/embed/u0aAMvvw_co)
 
 
 <br>
 
 ### Text
-- written by
 
-
-## Aknowledgements
-
-- I'd like to thank....
+- text written by
