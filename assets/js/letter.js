@@ -6,12 +6,14 @@ var custom_text = $('#custom_text')
 var addTextButton = $('#add-text')
 var removeButton = $('#remove')
 var addPButton = $('#newP')
+var sendButton = $('#send_button')
+
 
 function addWord(newText) {
-    lastP = $('#paper p:last-child')
-    text = lastP.text()
-    addString = text.trim() + ' ' + newText.trim()
-    lastP.text(addString)
+    lastP = $('#paper p:last-child');
+    text = lastP.text();
+    addString = text.trim() + ' ' + newText.trim();
+    lastP.text(addString);
 }
 
 function addText() {
@@ -24,10 +26,10 @@ function addText() {
 }
 
 function remove() {
-    lastP = $('#paper p:last-child')
-    text = lastP.text()
+    lastP = $('#paper p:last-child');
+    text = lastP.text();
     if (text.length) {
-        reducedText = text.slice(0,-1)
+        reducedText = text.slice(0,-1);
         lastP.text(reducedText);
     } else {
         lastP.remove();
@@ -35,19 +37,30 @@ function remove() {
 }
 
 function addP() {
-    newP = `<p class="text"></p>`
+    newP = `<p class="text"></p>`;
     paper.append(newP);
 }
 
+function sendLetter() {
+    console.log("Hello world");
+    paper.removeClass().addClass("letter_sending");
+    sendButton.remove();
+}
+
 letterParts.click(function(e) {
-    var clickedValue = $(e.target).text()
-    addWord(clickedValue)
+    var clickedValue = $(e.target).text();
+    addWord(clickedValue);
 });
 
 addTextButton.click(function(event) {
     event.preventDefault();
     addText();
-})
+});
+
 
 removeButton.click(remove)
 addPButton.click(addP)
+sendButton.click(sendLetter)
+removeButton.click(remove);
+addPButton.click(addP);
+

@@ -18,7 +18,29 @@
     <title>Christmas Hackathon Site - Letter to Santa</title>
 </head>
 
-<body style="background-image: url('/assets/img/photo-1576072446580-32468f1b5439.jpg'); background-repeat: no-repeat; background-size: cover;">
+<body style="background-image: url('assets/img/greenbaubles.jpg'); background-repeat: repeat; background-size: cover;">
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Sending...</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                Your letter has been sent to Santa... It's on its way to the North Pole.
+            </div>
+            <div class="modal-footer">
+            <a href="index.html" class="btn btn-primary">Check the countdown</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
     <header>
         <div class="header-container">
             <div class="logo-text">
@@ -29,8 +51,7 @@
                     <ul>
                         <li class="first-nav"><a href="index.html">Home</a></li>
                         <li ><a href="letter.html">Letter</a></li>
-                        <li><a href="video.html">Sing along</a></li>
-                        <!-- <li><a href="#">print & color</a></li> -->
+                        <li><a href="video.html">Sing Along</a></li>
                     </ul>
                 </nav>
             </div>
@@ -38,8 +59,7 @@
                 <ul class="nav-items">
                     <li class="nav-item"><a href="index.html"><span class="hover-underline">Home</span></a></li>
                     <li class="nav-item"><a href="letter.html"><span class="hover-underline">Letter</span></a></li>
-                    <li class="nav-item"><a href="video.html"><span class="hover-underline">sing along</span></a></li>
-                    <!-- <li class="nav-item"><a href="#"><span class="hover-underline">print & color</span></a></li> -->
+                    <li class="nav-item"><a href="video.html"><span class="hover-underline">Sing Along</span></a></li>
                 </ul>
             </nav>
             <div class="menu-toggle">
@@ -49,9 +69,10 @@
     </header>
 
     <div class="container letter-container">
+        <h2 class="heading letter-heading text-center p-3 m-4">Write a Letter to Santa</h2>
         <div class="row letter-construct p-3 mb-2">
             <div class="col-sm-7">
-                <p>Click to use these phrases:</p>
+                <p><strong>Click to use these phrases:</strong></p>
                 <div class="top-picks">
                     <div class="letter-part">Dear Santa,</div>
                     <div class="letter-part">My name is</div>
@@ -66,17 +87,22 @@
                     <div class="letter-part">sister</div>
                     <div class="letter-part">Grandma</div>
                     <div class="letter-part">Grandpa</div>
+                    <div class="letter-part">for</div>
+                    <div class="letter-part">and</div>
+                    <div class="letter-part">Mom</div>
+                    <div class="letter-part">Dad</div>
                 </div>
             </div>
             <div class="col-sm-3">
-                <p>Type your own text here:</p>
+                <p><strong>Type your own text here:</strong></p>
                 <form class="d-flex">
-                    <textarea class="letter-textarea" placeholder="Remember, be nice :)" cols="30" rows="3" id="custom_text"></textarea>
+                    <textarea class="letter-textarea" placeholder="Remember, be nice :)" cols="30" rows="3"
+                        id="custom_text"></textarea>
                     <br>
                     <button class="letter-button" id="add-text" type="submit">Add</button>
+
                 </form>
-                
-                
+
             </div>
             <div class="col-sm-2">
                 <p style="color: rgba(255, 255, 255, .01);">T</p>
@@ -88,14 +114,19 @@
             <div id='paper' class="col paper">
                 <p class="text">Dear Santa,</p>
                 <p class="text"></p>
-        </div>
-    </div>
+            </div>
 
-<!-- Print & Colour -->
-    <div class="container-fluid" id="print">
-        <div class="text-center print">
-            <h1 class="heading">Print the file & start colouring!</h1>
+            <div class="send-button">
+                <button id="send_button" class="btn btn-danger" type="button" data-toggle="modal" data-target="#exampleModal">Send</button>
+            </div>
+
         </div>
+
+
+    <!-- Print & Colour -->
+
+    <div class="container-fluid" id="print">
+        <h2 class="heading print-heading text-center p-3 m-4">Print & Colour</h2>
         <div class="row text-center align-center">
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="card align-center">
@@ -222,8 +253,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="letter.html">Letter</a></li>
-                    <li><a href="video.html">sing along</a></li>
-                    <!-- <li><a href="#">print & color</a></li> -->
+                    <li><a href="video.html">Sing Along</a></li>
                 </ul>
             </nav>
             <div class="logo-text">
