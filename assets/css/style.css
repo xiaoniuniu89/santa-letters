@@ -552,6 +552,12 @@ footer h4 {
     border-radius: 0.7rem;
     margin: 0.2rem 0.3rem;
     padding: 0.2rem 0.4rem;
+    cursor: pointer;
+}
+
+.letter-part:hover {
+    background-color: var(--secondary-bg-colour-dark);
+    color: var(--main-colour-light);
 }
 
 .letter-button {
@@ -562,11 +568,11 @@ footer h4 {
 }
 
 .letter-textarea {
-    
+    resize: none;
 }
 
 .desk {
-    background-image: url("/assets/img/desk_1.jpg");
+    background-image: url("../img/desk_1.jpg");
     background-size: cover;
     height: 70vh;
     margin: 1rem, 0rem, 3rem;
