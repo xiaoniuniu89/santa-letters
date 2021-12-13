@@ -19,6 +19,28 @@
 </head>
 
 <body style="background-image: url('assets/img/greenbaubles.jpg'); background-repeat: repeat; background-size: cover;">
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Sending...</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                Your letter has been sent to Santa... It's on its way to the North Pole.
+            </div>
+            <div class="modal-footer">
+            <a href="index.html" class="btn btn-primary">Check the countdown</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
     <header>
         <div class="header-container">
             <div class="logo-text">
@@ -66,17 +88,22 @@
                     <div class="letter-part">sister</div>
                     <div class="letter-part">Grandma</div>
                     <div class="letter-part">Grandpa</div>
+                    <div class="letter-part">for</div>
+                    <div class="letter-part">and</div>
+                    <div class="letter-part">Mom</div>
+                    <div class="letter-part">Dad</div>
                 </div>
             </div>
             <div class="col-sm-3">
                 <p><strong>Type your own text here:</strong></p>
                 <form class="d-flex">
-                    <textarea class="letter-textarea" placeholder="Remember, be nice :)" cols="30" rows="3" id="custom_text"></textarea>
+                    <textarea class="letter-textarea" placeholder="Remember, be nice :)" cols="30" rows="3"
+                        id="custom_text"></textarea>
                     <br>
                     <button class="letter-button" id="add-text" type="submit">Add</button>
                 </form>
-                
-                
+
+
             </div>
             <div class="col-sm-2">
                 <p style="color: rgba(255, 255, 255, .01);">T</p>
@@ -88,12 +115,15 @@
             <div id='paper' class="col paper">
                 <p class="text">Dear Santa,</p>
                 <p class="text"></p>
+            </div>
+            <div class="send-button">
+                <button id="send_button" class="btn btn-danger" type="button" data-toggle="modal" data-target="#exampleModal">Send</button>
+            </div>
         </div>
-    </div>
 
-    <!-- <button>Send</button> -->
 
 <!-- Print & Colour -->
+
     <div class="container-fluid" id="print">
         <div class="text-center print">
             <h1 class="heading print-heading p-3 m-4">Print the file & start colouring!</h1>

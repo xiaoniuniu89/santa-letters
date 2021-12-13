@@ -6,6 +6,7 @@ var custom_text = $('#custom_text')
 var addTextButton = $('#add-text')
 var removeButton = $('#remove')
 var addPButton = $('#newP')
+var sendButton = $('#send_button')
 
 function addWord(newText) {
     lastP = $('#paper p:last-child')
@@ -35,8 +36,14 @@ function remove() {
 }
 
 function addP() {
-    newP = `<p class="text"></p>`
+    newP = `<p class="text"></p>`;
     paper.append(newP);
+}
+
+function sendLetter() {
+    console.log("Hello world");
+    paper.removeClass().addClass("letter_sending");
+    sendButton.remove();
 }
 
 letterParts.click(function(e) {
@@ -51,3 +58,4 @@ addTextButton.click(function(event) {
 
 removeButton.click(remove)
 addPButton.click(addP)
+sendButton.click(sendLetter)
