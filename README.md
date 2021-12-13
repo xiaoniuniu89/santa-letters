@@ -148,7 +148,7 @@ The site is deployed on git hub pages. The link is here:
 
 https://xiaoniuniu89.github.io/santa-letters/
 
-Tsteps to deploy the site:
+Steps to deploy the site:
 - Go to [github.com](https://www.github.com)
 - Log in to account
 - Click repositories
@@ -189,7 +189,7 @@ More detailed instructions can be found [here](https://docs.github.com/en/github
 
 #### Images
 
-
+[Landing Background](https://pixabay.com/vectors/christmas-holiday-red-xmas-5368717/)
 
 
 <br>
