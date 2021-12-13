@@ -571,6 +571,7 @@ footer h4 {
     resize: none;
 }
 
+
 .print-heading, .video-heading {
     border-radius: 1rem;
     background-color: rgba(245, 245, 219, 0.7);
@@ -588,12 +589,21 @@ footer h4 {
     width: 70%;
     background-color: white;
     margin-left: 40%;
-    margin-right: 15%;
+    margin-right: 10%;
     transform: rotate(-7deg);
     margin-top: 2rem;
     padding: 2rem;
     font-size: 150%;
     font-family: 'Mountains of Christmas', cursive;
+}
+
+.send-button {
+    padding: 1rem;
+    margin-right: 2rem;;
+}
+
+.letter-sending {
+    display: none;
 }
 
 /* print & colour */
