@@ -571,6 +571,12 @@ footer h4 {
     resize: none;
 }
 
+.print-heading {
+    border-radius: 1rem;
+    background-color: rgba(245, 245, 219, 0.7);
+    color: #b40000;
+}
+
 .desk {
     background-image: url("../img/desk_1.jpg");
     background-size: cover;
@@ -591,9 +597,8 @@ footer h4 {
 }
 
 /* print & colour */
-.cards {
-    padding-top: 15px;
-    padding-bottom: 15px;
+.card {
+    margin-bottom: 1rem;
 }
 
 .print {
