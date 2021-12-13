@@ -426,7 +426,7 @@ footer h4 {
 
 .sing-along {
     background-color: green;
-    background-image: url(/assets/img/greenbaubles.jpg);
+    background-image: url(../img/greenbaubles.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
