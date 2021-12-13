@@ -1,11 +1,13 @@
 // script handling the letter typing / sending
 
 var letterParts = $('.letter-part');
-var paper = $('#paper');
-var custom_text = $('#custom_text');
-var addTextButton = $('#add-text');
-var removeButton = $('#remove');
-var addPButton = $('#newP');
+var paper = $('#paper')
+var custom_text = $('#custom_text')
+var addTextButton = $('#add-text')
+var removeButton = $('#remove')
+var addPButton = $('#newP')
+var sendButton = $('#send_button')
+
 
 function addWord(newText) {
     lastP = $('#paper p:last-child');
@@ -39,6 +41,12 @@ function addP() {
     paper.append(newP);
 }
 
+function sendLetter() {
+    console.log("Hello world");
+    paper.removeClass().addClass("letter_sending");
+    sendButton.remove();
+}
+
 letterParts.click(function(e) {
     var clickedValue = $(e.target).text();
     addWord(clickedValue);
@@ -49,5 +57,10 @@ addTextButton.click(function(event) {
     addText();
 });
 
+
+removeButton.click(remove)
+addPButton.click(addP)
+sendButton.click(sendLetter)
 removeButton.click(remove);
 addPButton.click(addP);
+
